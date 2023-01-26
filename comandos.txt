@@ -9,5 +9,5 @@ Comandos:
 3. git add . 
    agrega todos los archivos que git identifico anteriormente
 
-4. git commit
-    confirma los cambios realizados para generar un historial como en google drive
+4. git commit -m "commit"
+    confirma los cambios realizados para generar un historial como en google drive 
