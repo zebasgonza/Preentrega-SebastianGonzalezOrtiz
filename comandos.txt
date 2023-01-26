@@ -1,0 +1,13 @@
+Comandos:
+
+1. git init
+    sirve para empezar a trabajar con git. Solo se escribe la primera vez para activarlo
+
+2. git status
+    muestra que archivos existen junto con su status para saber que acción realizar
+
+3. git add . 
+   agrega todos los archivos que git identifico anteriormente
+
+4. git commit
+    confirma los cambios realizados para generar un historial como en google drive
