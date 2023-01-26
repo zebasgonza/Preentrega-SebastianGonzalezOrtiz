@@ -1,0 +1,341 @@
+
+
+/*-----------------------GUIDLINES-GENERALES----------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+nav, a {
+  color: rgb(0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  /*superpone la nav*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: right;
+  justify-content: space-evenly;
+}
+
+body {
+  background-color: bisque;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1667rem;
+  margin: 2rem 2rem 2rem 2rem;
+}
+/*adaptación de imagen a la pantalla*/
+img {
+  max-width: 100%;
+}
+
+/*------------------------INDEX---------------------------------------------*/
+/*------------------------HEADER----------------------------------*/
+.menu__nav {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  list-style: none;
+  gap: 2rem;
+}
+
+/* ccs boxmodeling
+.menu__nav li {
+  display: inline;
+  margin-right: 2rem;
+  margin-top: 80rem;
+}
+*/
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+}
+
+/*-----------------------SECTION HERO----------------------------------*/
+/*
+.hero {
+  position: relative;
+}
+*/
+.hero__img {
+  
+  width: 1900px;
+  height: 950px;
+  margin-top: 7rem;
+  position: relative;
+  
+}
+.hero__sub {
+  font-family: 'Raleway', sans-serif;
+  font-weight: medium;
+  font-style: normal;
+  font-size: 1,6669rem;
+  color: aliceblue;
+  height: 3.125rem;  
+  position: absolute; /*ERROR: NO IDENTIFICA EL LIMITE DE LA FOTO*/
+  top: 50%;
+  left: 42%;
+  margin: -1.563rem 0 0 -1.563rem;
+  z-index: 2;
+}
+.hero__titulo{
+  color: aliceblue;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  margin-top: 6rem;
+  margin-left: 45rem;
+  font-size: 7rem;
+  display: inline-block;
+  position: absolute;
+  top: 23%;
+  bottom: 42%;
+  z-index: 1;
+}
+
+/*-----------------------SECTION HISTORY----------------------------------*/
+
+.history__h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 3rem;
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+
+.history__img{
+  width: 900px;
+  height: 450px;
+  margin-left: 15rem;
+}
+
+/*-----------------------SECTION VINOS DESTACADOS----------------------------------*/
+#VinosDestacados {
+  display: flex;
+  flex-direction: column;
+
+  /*
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 3rem;
+  */
+}
+.vino__h2 { /*ERROR: EL H2 LO TOMA COMO UN BLOQUE RECTANGULAR DE ESPACIO*/
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 3rem;
+  margin-left: 2rem;
+  margin-bottom: -1rem;
+}
+
+
+/*-----------------------PAGINA CATÁLOGO-------------------------------------------------*/
+/*-----------------------INTRO CATALOGO-----------------------------------*/
+
+.catalogo__img {
+  width: 1900px;
+  height: 950px; 
+  margin-top: 7rem;
+  position: relative;
+}
+.catalogo__h2 {
+  color: aliceblue;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  margin-top: 6rem;
+  margin-left: 45rem;
+  font-size: 7rem;
+  display: inline-block;
+  position: absolute;
+  top: 23%;
+  bottom: 42%;
+  z-index: 1;
+}
+.catalogo__text {
+  
+  width: 65rem;
+  color: aliceblue;
+  position: absolute; /*ERROR: NO IDENTIFICA EL LIMITE DE LA FOTO*/
+  top: 50%;
+  left: 26%;
+  margin: -1.563rem 0 0 -1.563rem;
+}
+
+
+
+/*´´´´´´´´´´´´´´´´´´´´´´´´´´´ Class para etiquetas ´´´´´´´´´´´´´´´´´´´´´´´´´´*/
+.texto1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1667rem;
+}
+
+.titulos {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 3rem;
+  margin: 8rem 2rem 2rem 2rem;
+}
+
+
+.subtitulos {
+  font-family: 'Raleway', sans-serif;
+  font-weight: medium;
+  font-style: normal;
+  font-size: 1,6669rem;
+  margin: 2rem 2rem 2rem 2rem;
+}
+
+/*´´´´´´´´´´´´´´´´´´´´´´´´´´´ Guidelines para card productos ´´´´´´´´´´´´´´´´´´´´´´´´´´*/
+
+
+.card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  max-width: 300px;
+  padding: 1rem 1rem 2rem 1rem;
+  /* margin: 4rem 2rem; */
+  position: relative;
+}
+
+.card__imagen {
+  width: 300px;
+}
+
+.card__titulo {
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 1.6999rem;
+}
+
+.card__descripcion {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1667rem;
+  margin: 1rem 0;
+}
+
+.card__antiguedad {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1667rem;
+  margin: 1rem 0;
+}
+
+.card__tamano {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1667rem;
+  margin: 1rem 0;
+}
+
+.card__precio {
+  font-family: 'Raleway', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.1667rem;
+  margin: 1rem 0;
+}
+
+.card__oferta{
+  background-color: rgb(240, 233, 140);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-size: 1,10rem;
+  position: absolute;
+  top: -4px;
+  right: -100px;
+  height: 26px;
+}
+
+.boton {
+  border: none;
+  padding: 12px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+
+
+/*Colores*/
+.white {
+  color: white;
+}
+
+/*
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto_Slab';
+  src: url('../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf');
+}
+
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+  
+  nav {
+    float: left;
+  }
+  
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+  
+  nav ul li {
+    float: left;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    background: #eeb75f;
+  }
