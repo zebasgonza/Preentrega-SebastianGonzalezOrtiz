@@ -17,7 +17,11 @@ Comandos:
     git log --oneline
     muestra los commit solo en una solalinea
 
-6. git branch
-    muestra que ramas hay en el archivo
-   git branch mi-rama
-   Genera otra versión del mismo proyecto. (no colocar ramas sin haber guardado modificaciones, debe estar working tree clean)
+6.  git branch
+        muestra que ramas hay en el archivo
+    git branch mi-rama
+        Genera otra versión del mismo proyecto. (no colocar ramas sin haber guardado modificaciones, debe estar working tree clean)
+    git checkout (nombre de la rama) rama-nueva
+        genere el cambio de rama
+    git branch -D rama-borar
+        se debe estar en main para borrar las demas.
