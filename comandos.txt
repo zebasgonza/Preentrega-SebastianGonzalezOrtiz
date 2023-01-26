@@ -16,3 +16,6 @@ Comandos:
     muestra los commit realizados anteriormente
     git log --oneline
     muestra los commit solo en una solalinea
+
+6. git branch mi-rama
+   Genera otra versión del mismo proyecto. (no colocar ramas sin haber guardado modificaciones)
