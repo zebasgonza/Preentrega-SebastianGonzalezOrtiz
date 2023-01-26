@@ -11,3 +11,8 @@ Comandos:
 
 4. git commit -m "commit"
     confirma los cambios realizados para generar un historial como en google drive 
+
+5. git log
+    muestra los commit realizados anteriormente
+    git logg --oneline
+    muestra los commit solo en una solalinea
