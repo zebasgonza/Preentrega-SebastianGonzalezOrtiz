@@ -14,5 +14,5 @@ Comandos:
 
 5. git log
     muestra los commit realizados anteriormente
-    git logg --oneline
+    git log --oneline
     muestra los commit solo en una solalinea
