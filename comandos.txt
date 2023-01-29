@@ -25,3 +25,14 @@ Comandos:
         genere el cambio de rama
     git branch -D rama-borar
         se debe estar en main para borrar las demas.
+
+__________________________________________________________________
+GITHUB COMANDOS
+    
+    * Generar repositorio
+        git remote add origin "agregar link del repositorio"
+    
+    *Guardar repositorio
+    git push -u origin main
+    git push: guarda los cambios
+    
