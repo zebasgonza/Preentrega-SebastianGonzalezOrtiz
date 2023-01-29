@@ -31,8 +31,8 @@ GITHUB COMANDOS
     
     * Generar repositorio
         git remote add origin "agregar link del repositorio"
-    
+            git push -u origin main
     *Guardar repositorio
-    git push -u origin main
     git push: guarda los cambios
+    
     
