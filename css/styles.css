@@ -20,7 +20,7 @@ body {
 
 header {
   /*superpone la nav*/
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -70,48 +70,46 @@ img {
 }
 
 /*-----------------------SECTION HERO----------------------------------*/
-/*
-.hero {
-  position: relative;
+
+ /* .hero {
+  display: flex;
+  flex-wrap: wrap;
 }
 */
-.hero__img {
-  
-  width: 1900px;
-  height: 950px;
-  margin-top: 7rem;
-  position: relative;
-  
-}
-.hero__sub {
-  font-family: 'Raleway', sans-serif;
-  font-weight: medium;
-  font-style: normal;
-  font-size: 1,6669rem;
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/1.bienvenidos.jpg") no-repeat center / cover;
   color: aliceblue;
-  height: 3.125rem;  
-  position: absolute; /*ERROR: NO IDENTIFICA EL LIMITE DE LA FOTO*/
-  top: 50%;
-  left: 42%;
-  margin: -1.563rem 0 0 -1.563rem;
-  z-index: 2;
 }
-.hero__titulo{
-  color: aliceblue;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bolder;
-  font-style: normal;
-  margin-top: 6rem;
-  margin-left: 45rem;
-  font-size: 7rem;
-  display: inline-block;
-  position: absolute;
-  top: 23%;
-  bottom: 42%;
-  z-index: 1;
+.hero__container {
+  width: 90%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.hero__container__title {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+.hero__container__sub {
+  font-size: 1.2rem;
+  max-width: 100%;
 }
 
+
+
 /*-----------------------SECTION HISTORY----------------------------------*/
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .history__h2 {
   font-family: 'Raleway', sans-serif;
@@ -120,18 +118,20 @@ img {
   font-size: 3rem;
   margin: 2rem 2rem 2rem 2rem;
 }
-
-
 .history__img{
-  width: 900px;
+  width: 1900px;
   height: 450px;
-  margin-left: 15rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
-
 /*-----------------------SECTION VINOS DESTACADOS----------------------------------*/
-#VinosDestacados {
+.row {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: left;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  gap: 3rem;
 
   /*
   margin-top: 4rem;
@@ -143,7 +143,7 @@ img {
   gap: 3rem;
   */
 }
-.vino__h2 { /*ERROR: EL H2 LO TOMA COMO UN BLOQUE RECTANGULAR DE ESPACIO*/
+.vino__h2 {
   font-family: 'Raleway', sans-serif;
   font-weight: bolder;
   font-style: normal;
@@ -156,6 +156,38 @@ img {
 /*-----------------------PAGINA CATÁLOGO-------------------------------------------------*/
 /*-----------------------INTRO CATALOGO-----------------------------------*/
 
+#catalogo {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/3.vinos destacados.jpg") no-repeat center / cover;
+  color: aliceblue;
+}
+
+.catalogo__container{
+  width: 90%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.catalogo__container__title{
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+.catalogo__container__text{
+  font-size: 1.2rem;
+  max-width: 100%;
+}
+
+
+
+/*
 .catalogo__img {
   width: 1900px;
   height: 950px; 
@@ -175,18 +207,20 @@ img {
   top: 23%;
   bottom: 42%;
   z-index: 1;
-}
+} 
+*/
+
+/*
 .catalogo__text {
-  
+  font-size: 1.1667rem;
   width: 65rem;
   color: aliceblue;
-  position: absolute; /*ERROR: NO IDENTIFICA EL LIMITE DE LA FOTO*/
+  position: absolute; 
   top: 50%;
   left: 26%;
   margin: -1.563rem 0 0 -1.563rem;
 }
-
-
+*/
 
 /*´´´´´´´´´´´´´´´´´´´´´´´´´´´ Class para etiquetas ´´´´´´´´´´´´´´´´´´´´´´´´´´*/
 .texto1 {
@@ -206,12 +240,33 @@ img {
 
 
 .subtitulos {
+  display: flex;
+  flex-wrap: wrap;
   font-family: 'Raleway', sans-serif;
   font-weight: medium;
   font-style: normal;
-  font-size: 1,6669rem;
-  margin: 2rem 2rem 2rem 2rem;
+  font-size: 2rem;
+  margin: 4rem 2rem 2rem 2rem;
 }
+
+/*´´´´´´´´´´´´´´´´´´´´´´´´´´´ mobile first´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´*/
+@media only screen and (max-width:768px){
+  html {
+    font-size: 10px;
+  }
+}
+
+/*.grid{
+  display: grid;  
+  grid-template-columns: repeat(12, 1fr); */
+
+/*  width: 100%;
+  max-width: 1100px;
+  height: 100%;
+  margin: auto;
+  gap: 10px;
+  overflow: hidden; */
+
 
 /*´´´´´´´´´´´´´´´´´´´´´´´´´´´ Guidelines para card productos ´´´´´´´´´´´´´´´´´´´´´´´´´´*/
 
@@ -223,7 +278,6 @@ img {
   font-family: 'Raleway', sans-serif;
   max-width: 300px;
   padding: 1rem 1rem 2rem 1rem;
-  /* margin: 4rem 2rem; */
   position: relative;
 }
 

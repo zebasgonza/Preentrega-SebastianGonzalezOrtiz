@@ -36,3 +36,33 @@ GITHUB COMANDOS
     git push: guarda los cambios
     
     
+    
+
+
+    .hero__sub {
+  font-family: 'Raleway', sans-serif;
+  font-weight: medium;
+  font-style: normal;
+  font-size: 1,6669rem;
+  color: aliceblue;
+  height: 3.125rem;  
+  position: absolute; /*ERROR: NO IDENTIFICA EL LIMITE DE LA FOTO*/
+  top: 50%;
+  left: 42%;
+  margin: -1.563rem 0 0 -1.563rem;
+  z-index: 2;
+}
+.hero__titulo{
+  color: aliceblue;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bolder;
+  font-style: normal;
+  margin-top: 6rem;
+  margin-left: 45rem;
+  font-size: 7rem;
+  display: inline-block;
+  position: absolute;
+  top: 23%;
+  bottom: 42%;
+  z-index: 1;
+}
