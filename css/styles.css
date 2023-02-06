@@ -161,7 +161,7 @@ img {
 #catalogo {
   width: 100%;
   height: 100vh;
-  background: url("../img/3.vinos destacados.jpg") no-repeat center / cover;
+  background: url("../img/3.vinos\ destacados.jpg") no-repeat center / cover;
   color: aliceblue;
 }
 
@@ -171,18 +171,18 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .catalogo__container__title{
-  text-align: center;
   font-size: 6rem;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   max-width: 100%;
 }
 .catalogo__container__text{
+  font-weight: medium;
   font-size: 1.2rem;
   max-width: 100%;
 }
