@@ -119,8 +119,10 @@ img {
   margin: 2rem 2rem 2rem 2rem;
 }
 .history__img{
-  width: 1900px;
+  width: 45%;
   height: 450px;
+  object-fit: cover;
+  object-position: bottom;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -249,10 +251,11 @@ img {
   margin: 4rem 2rem 2rem 2rem;
 }
 
+/*´´´´´´´´´´´´´´´´´´´´´´´´´´´ Media Queries´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´*/
 /*´´´´´´´´´´´´´´´´´´´´´´´´´´´ mobile first´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´*/
 @media only screen and (max-width:768px){
   html {
-    font-size: 10px;
+    font-size: 80%;
   }
 }
 
