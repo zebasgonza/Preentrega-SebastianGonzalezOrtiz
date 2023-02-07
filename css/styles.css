@@ -158,6 +158,8 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: left;
+  margin-top: 3rem;
+  margin-left: 2rem;
   gap: 3rem;
 
   /*
